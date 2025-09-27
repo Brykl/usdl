@@ -33,7 +33,7 @@ func run(ctx context.Context, log *logger.Logger) error {
 
 	log.Info(ctx, "startup", "GOMAXPROCES", runtime.GOMAXPROCS(0))
 
-	log.Info(ctx, "startup", "status", "starting")
+	log.Info(ctx, "startup", "status", "started")
 	defer log.Info(ctx, "startup", "status", "shutding down")
 
 	shutdown := make(chan os.Signal, 1)

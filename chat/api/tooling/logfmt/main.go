@@ -18,7 +18,7 @@ var service string
 func init() {
 	flag.StringVar(&service, "service", "", "filter which service to see")
 
-	signal.Ignore(syscall.SIGINT)
+	signal.Ignore(syscall.SIGINT, syscall.SIGTERM)
 }
 
 func main() {

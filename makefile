@@ -5,7 +5,7 @@ SHELL = $(if $(wildcard $(SHELL_PATH)),/bin/ash,/bin/bash)
 # Chat
 
 chat-run:
-	go run chat\api\services\cap\main.go | chat\api\tooling\logfmt\main.go
+	go run chat/api/services/cap/main.go | go run chat/api/tooling/logfmt/main.go
 
 #================================================================================
 # Modules support 
