@@ -27,5 +27,5 @@ func WebAPI(cfg Config) http.Handler {
 
 	chatapp.Routes(app)
 
-	return nil
+	return app
 }
