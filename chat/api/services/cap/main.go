@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"syscall"
 
-	"github.com/Brykl/usdl/chat/foundation/logger"
-	"github.com/Brykl/usdl/chat/foundation/web"
+	"github.com/Brykl/usdl/foundation/logger"
+	"github.com/Brykl/usdl/foundation/web"
 )
 
 func main() {
